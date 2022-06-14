@@ -1,3 +1,3 @@
 RewriteEngine On
-RewriteCond %{HTTP_HOST} ^panerutilak.com.np$
-RewriteRule (.*) http://www.panerutilak.com.np$1 [R=301]
+RewriteCond %{HTTP_HOST} ^www.panerutilak.com.np$ [NC]
+RewriteRule ^(.*)$ http://panerutilak.com.np/$1 [R=301,L]
